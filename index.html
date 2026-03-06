@@ -25,8 +25,9 @@
     --radius: 16px;
     --shadow: 0 8px 32px rgba(0,0,0,0.4);
   }
-  * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+  * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
   html, body { height: 100%; background: var(--bg); color: var(--text); font-family: 'Nunito', sans-serif; overflow-x: hidden; }
+  button, a, input, select { touch-action: manipulation; cursor: pointer; }
 
   /* HEADER */
   .header {
@@ -459,5 +460,4 @@
 <div class="modal-overlay" id="sheets-modal">
   <div class="modal">
     <div class="modal-handle"></div>
-    <h2 style="margin-bottom:16px;font-family:'Baloo 2',cursive">📊 Google Sheets Setup</h2>
-    <p style="font
+    <h2
